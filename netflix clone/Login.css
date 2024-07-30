@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  background-image: url("assets/img/bg.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/img/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-size: max(100vh, 100vw);
+  background-repeat: no-repeat;
+  height: 740px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main .box {
+  height: 740px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 70vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 7px 39px 7px 39px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 0px;
+  text-align: center;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border: 0px;
+  font-weight: 500;
+}
+.main input {
+  padding: 16px 160px 16px 14px;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.box2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  width: 22vw;
+  background-color: #000000cc;
+  color: white;
+  padding: 40px 60px 30px 60px;
+  gap: 17px;
+  height: calc(100% - 100px);
+
+  font-family: Martel sans, sans-serif;
+  margin: 0px 540px 0px 540px;
+}
+.greybtn {
+  background-color: #83838365;
+  color: white;
+  border: 0px;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+}
+.checkbox > input {
+  border: none;
+  height: inherit;
+  width: inherit;
+  padding: 18px;
+  cursor: pointer;
+}
+.main2 span {
+  color: grey;
+}
+.main2 span a {
+  color: white;
+  text-decoration: none;
+}
+.boxfooter {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.footerSN a {
+  font-size: 14px;
+  color: white;
+}
+.footerSN {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  padding: 178px 150px;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+footer .question {
+  padding: 34px 0px;
+}
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footeritem {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.dropbtn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: rgb(174, 174, 174);
+  padding: 3px 8px;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1 color (#f1f1f1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+@media screen and (max-width: 600px) {
+  .main {
+    background-image: cover;
+
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    margin: 0px auto;
+    width: 100%;
+    z-index: -1;
+  }
+  .footerSN {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    color: white;
+    padding: 178px 150px;
+  }
+}
